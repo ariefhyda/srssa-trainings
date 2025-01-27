@@ -1,0 +1,219 @@
+{
+    "trainings": [
+      {
+        "id": "image-processing",
+        "title": "Image Processing",
+        "description": "Image Processing adalah proses pengolahan dan analisis gambar digital untuk mendapatkan informasi atau menghasilkan gambar yang lebih baik. Proses ini melibatkan teknik manipulasi gambar menggunakan algoritma matematika dan komputer.",
+        "goals": [
+            "Memberikan pemahaman mendalam tentang teknik pengolahan gambar digital, mulai dari tahap dasar hingga analisis lanjutan.",
+            "Membekali kemampuan untuk menerapkan teknik pengolahan gambar digital pada berbagai aplikasi dunia nyata di berbagai sektor"
+        ],
+        "materials": {
+          "Pendahuluan Image Processing dan Computer Vision": [
+            "Apakah Image Processing dan Computer Vision itu?",
+            "Pemanfaatan library OpenCV",
+            "Akses gambar dan video dari file/storage",
+            "Akses gambar dan video dari kamera"
+          ],
+          "Rekayasa dan Pemrosesan Gambar": [
+            "Point operators",
+            "Filter",
+            "Neighborhood operator",
+            "Domain frekuensi",
+            "Filterbank"
+          ],
+          "Studi Kasus": [
+            "Template matching",
+            "Ekstraksi fitur 4",
+            "Deteksi obyek menggunakan Adaboost-Cascade"
+          ]
+        },
+        "schedule": ["Februari (Minggu ke 2)", "Mei (Minggu ke 2)", "Agustus (Minggu ke 2)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "3 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      },
+      {
+        "id": "computer-vision-basic",
+        "title": "Computer Vision Basic",
+        "description": "Computer Vision adalah cabang kecerdasan buatan (AI) yang berfokus pada bagaimana komputer dapat \"melihat\", memahami, dan menganalisis data visual dari gambar atau video. Computer Vision Basic adalah pelatihan dasar yang membantu memahami prinsip-prinsip inti dan alat yang digunakan untuk menerapkan teknologi ini.",
+        "goals": [
+            "Keamanan: Pengenalan wajah untuk akses kontrol.",
+            "Transportasi: Deteksi rambu jalan dan pejalan kaki dalam kendaraan otonom.",
+        "Industri: Memantau kualitas produk di jalur produksi",
+        "Kesehatan: Deteksi penyakit dari citra medis seperti X-ray."  
+        ],
+        "materials": {
+          "Akses Kamera": [
+            "Model dan kalibrasi kamera",
+            "Kamera stereo",
+            "Kamera Kinect"
+          ],
+          "Analisis Gambar dengan AI": [
+            "Ekstraksi fitur",
+            "Deteksi dan klasifikasi menggunakan Adaboost, Artificial Neural Network, dan Support Vector Machine",
+            "Deteksi wajah",
+            "Klasifikasi objek"
+          ],
+          "Proyek dan Diskusi": [
+            "Deteksi masker",
+            "Pengenalan identitas orang"
+          ]
+        },
+        "schedule": ["Februari (Minggu ke 4)", "Mei (Minggu ke 4)", "Agustus (Minggu ke 4)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "3 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      },
+      {
+        "id": "computer-vision-advanced",
+        "title": "Computer Vision Advanced",
+        "description": "Computer Vision Advanced adalah pelatihan tingkat lanjut yang dirancang untuk mengembangkan kemampuan peserta dalam menerapkan teknologi visi komputer menggunakan algoritma mutakhir dan pendekatan berbasis kecerdasan buatan (AI). Pelatihan ini memberikan fokus pada analisis data visual yang kompleks, seperti deteksi, segmentasi, dan pengenalan pola menggunakan teknik deep learning serta model terkini.",
+        "goals": [
+          "Membekali peserta dengan keterampilan untuk membangun sistem visi komputer yang canggih, presisi tinggi, dan dapat diterapkan dalam berbagai industri.",
+          "Mengajarkan penggunaan pustaka modern seperti TensorFlow, PyTorch, dan framework deteksi objek seperti YOLO dan Faster R-CNN."
+        ],
+        "materials": {
+          "Deep Learning untuk Visi Komputer": [
+            "Pemahaman arsitektur CNN (Convolutional Neural Networks)",
+            "Pelatihan model untuk tugas klasifikasi dan deteksi objek"
+          ],
+          "Deteksi Objek dan Pengenalan Pola": [
+            "Implementasi model YOLO, SSD, atau Faster R-CNN untuk mendeteksi dan melacak objek dalam gambar dan video."
+          ],
+          "Pemrosesan Data RealTime": [
+            "Optimasi model untuk berjalan secara efisien pada perangkat edge, seperti drone atau robot"
+          ]
+        },
+        "schedule": ["Maret (Minggu ke 2)", "Juni (Minggu ke 2)", "September (Minggu ke 2)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "3 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      },
+      {
+        "id": "robotic-basic",
+        "title": "Robotic Basic",
+        "description": "Robotic Basic adalah pelatihan robotika tingkat dasar yang dirancang untuk peserta yang sudah memahami dasar-dasar robotika, seperti komponen elektronik, mekanika, dan pemrograman sederhana. Pada tingkat ini, peserta akan mempelajari konsep yang lebih kompleks dalam desain, pengendalian, dan pengembangan robot menggunakan simulator realistic untuk menjalankan tugas yang lebih spesifik dan efisien. Disamping itu, peserta juga akan dibekali dengan pemrograman menggunakan library ROS untuk membuat system multitasking yang mengakses banyak sensor secara riil.",
+        "goals": [
+          "Membangun dan memprogram robot yang dapat menjalankan tugas-tugas canggih, seperti navigasi otomatis atau interaksi dengan lingkungan.",
+          "Memahami dan mengimplementasikan teknik kontrol tingkat lanjut untuk meningkatkan efisiensi dan akurasi gerakan robot.",
+          "Membaca, mengolah, dan menggunakan data sensor dalam waktu nyata untuk pengambilan keputusan.",
+          "Belajar mendesain robot yang mampu bergerak secara mandiri tanpa intervensi manusia."
+        ],
+        "materials": {
+          "Simulasi menggunakan VRep/Gazebo": [
+            "Menggunakan model robot di dalam simulator, mengendalikan robot menggunakan control sederhana seperti PID dan Fuzzy"
+          ],
+          "Pengenalan dan penggunaan ROS": [
+            "Pengenalan pemrograman dan library ROS, membuat topik, membuat servis sederhana"
+          ],
+          "Akses sensor": [
+            "Penggunaan kamera monocular untuk studi kasus deteksi obyek",
+            "Penggunaan kamera Kinect untuk studi kasus pengukuran jarak obyek dan skeleton tubuh",
+            "Penggunaan ultrasonic untuk studi kasus mengukur jarak",
+            "Penggunaan lidar untuk studi kasus deteksi manusia menggunakan pola kaki"
+          ]
+        },
+        "schedule": ["Maret (Minggu ke 4)", "Juni (Minggu ke 4)", "September (Minggu ke 4)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "3 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      },
+      {
+        "id": "robotic-advanced",
+        "title": "Robotic Advanced",
+        "description": "Robotika lanjut adalah tahap pelatihan yang dirancang untuk mendalami teknologi robot modern yang lebih kompleks, mencakup algoritma canggih, sistem kendali, dan kecerdasan buatan. Pelatihan ini ditujukan untuk peserta yang telah memiliki pemahaman dasar hingga menengah di bidang robotika dan ingin mengembangkan kemampuan mereka untuk aplikasi nyata di dunia industri, riset, atau proyek inovatif",
+        "goals": [
+          "Peserta mampu mengembangkan robot canggih yang dapat beroperasi di lingkungan nyata dengan tingkat otonomi tinggi.",
+          "Peserta memahami cara mengintegrasikan hardware, software, dan algoritma untuk menciptakan solusi robotik yang holistik.",
+          "Peserta dapat meningkatkan kemampuan robot melalui kecerdasan buatan untuk adaptasi dan pengambilan keputusan.",
+          "Peserta dapat menerapkan robotika dalam berbagai bidang."
+        ],
+        "materials": {
+          "Sensor-based perception": [
+            "Mempersepsikan kondisi/suasana lingkungan berdasarkan informasi/data dari kamera",
+            " Mempersepsikan kondis/suasana lingkungan berdasarkan informasi/data dari lidar"
+          ],
+          "Human-Robot Interaction": [
+            "Deteksi human upper body menggunakan data RGB dan Depth",
+            "Pengenalan aktivitas manusia"
+          ],
+          "Obstacle avoidance and navigation system": [
+            "Integrasi sistem kontrol PID/Fuzzy untuk menghindari penghalang",
+            "Penerapan sistem navigasi pada robot"
+          ]
+        },
+        "schedule": ["April (Minggu ke 2)", "Juli (Minggu ke 2)", "Oktober (Minggu ke 2)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "4 hari @ 8 jam/hari",
+        "fee": "Rp. 7.000.000 / peserta"
+      },
+      {
+        "id": "ai-basic",
+        "title": "Artificial Intelligence Basic",
+        "description": "Pelatihan Artificial Intelligence Basic dirancang untuk memberikan pemahaman fundamental tentang kecerdasan buatan (Artificial Intelligence) bagi pemula. Peserta akan mengenal konsep dasar, teknik-teknik utama, dan aplikasi AI dalam kehidupan sehari-hari. Pelatihan ini ideal untuk pelajar, profesional, atau siapa saja yang ingin memulai karier di bidang teknologi modern.",
+        "goals": [
+          "Peserta mampu memahami definisi, prinsip, dan komponen utama kecerdasan buatan (Artificial Intelligence) serta perbedaan antara AI, Machine Learning, dan Deep Learning.",
+          "Peserta dapat mengenali dan menerapkan teknik-teknik dasar dalam pembelajaran mesin, seperti regresi, klasifikasi, dan clustering, menggunakan dataset sederhana.",
+          "Peserta mampu memahami pentingnya data dalam pengembangan AI, melakukan pembersihan (data cleaning), dan visualisasi data menggunakan tools dasar seperti Pandas, NumPy, dan Matplotlib.",
+          "Peserta dapat membangun model sederhana menggunakan library seperti Scikit-learn dan memahami cara mengevaluasi performa model tersebut.",
+          "Memberikan pondasi kuat bagi peserta untuk memulai karier atau melanjutkan pembelajaran ke tingkat lanjut di bidang AI.",
+          "Membantu peserta memahami bagaimana AI diterapkan di berbagai industri."
+        ],
+        "materials": {
+          "Pengantar kecerdasan buatan": [
+            "Pengantar kecerdasan buatan",
+            "Dasar-dasar pembelajaran mesin",
+            "Ekstraksi fitur, pengolahan data, dan reduksi data (PCA, LDA)"
+          ],
+          "Kecerdasan buatan untuk control": [
+            "PID",
+            "Fuzzy Logic Control"
+          ],
+          "Kecerdasan buatan konvensional": [
+            "Artificial Neural Network",
+            "Support Vector Machine",
+            "Decision Tree"
+          ]
+        },
+        "schedule": ["April (Minggu ke 4)", "Juli (Minggu ke 4)", "Oktober (Minggu ke 4)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "3 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      },
+      {
+        "id": "ai-advanced",
+        "title": "Artificial Intelligence Advanced",
+        "description": "Pelatihan Artificial Intelligence Advanced dirancang untuk peserta yang sudah memahami dasar-dasar kecerdasan buatan dan ingin mendalami teknik-teknik lanjutan untuk membangun model AI yang lebih kompleks dan optimal. Fokus pelatihan ini adalah implementasi AI di dunia nyata menggunakan teknologi terkini seperti kombinasi metode konvensional, deep learning, dan reinforcement learning.",
+        "goals": [
+          "Peserta mampu memahami dan menerapkan algoritma serta arsitektur canggih dalam kecerdasan buatan, termasuk ensemble learning, deep learning, dan reinforcement learning.",
+          "Peserta dapat bekerja dengan dataset besar, melakukan pengolahan, analisis, dan memanfaatkan teknologi big data.",
+          "Peserta mampu mengembangkan model AI tingkat lanjut untuk berbagai aplikasi, seperti pemrosesan bahasa alami (NLP), computer vision, dan generative AI (GANs).",
+          "Peserta memahami cara melakukan hyperparameter tuning, menggunakan teknik optimasi, dan menerapkan pipeline machine learning untuk hasil yang optimal.",
+          "Peserta dapat membangun solusi berbasis AI untuk berbagai kebutuhan industri, seperti sistem rekomendasi, chatbot, analisis video, atau pengendalian robot.",
+          "Memberikan peserta keterampilan yang relevan dengan kebutuhan industri dan riset, sehingga mampu bersaing di pasar kerja global sebagai AI Engineer, Data Scientist, atau Researcher.",
+          "Peserta diharapkan dapat menggunakan kecerdasan buatan untuk menciptakan inovasi baru yang dapat meningkatkan efisiensi atau menyelesaikan permasalahan kompleks di berbagai bidang."
+        ],
+        "materials": {
+          "Modifikasi kecerdasan buatan konvensional": [
+            "Levenberg Marquardt",
+            "Neuro-Fuzzy (ANFIS, SCFNN)",
+            "Ensemble Learning"
+          ],
+          "Deep learning/Convolutional Neural Network": [
+            "Pengenalan DL/CNN",
+            "YOLO"
+          ],
+          "Reinforcement learning": [
+            "Pengenalan Reinforcement Learning",
+            "Penerapan Reinforcement Learning"
+          ]
+        },
+        "schedule": ["Mei (Minggu ke 2)", "Agustus (Minggu ke 2)", "November (Minggu ke 2)"],
+        "location": "Laboratorium Sistem Otonom Gedung SAW 10.06, Politeknik Elektronika Negeri Surabaya",
+        "duration": "5 hari @ 8 jam/hari",
+        "fee": "Rp. 5.000.000 / peserta"
+      }
+    ]
+  }
+  

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRSSA Training 2025</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F8F9FC] font-['Inter']">
+  <div class="max-w-[1440px] mx-auto">
+   <!-- Navbar -->
+   <header id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-white/30 transition-all duration-300">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="assets/icons/logo.png" alt="SRSSA Logo" class="h-10">
+        <span class="text-xl font-bold ml-3 text-[#1A202C]">SRSSA</span>
+      </div>
+  
+      <!-- Hamburger Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-[#1A202C] text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Navigation Menu -->
+      <nav id="menu" class="hidden lg:flex items-center space-x-6 text-sm font-medium text-[#1A202C]">
+        <a href="/#beranda" class="hover:text-[#4A5568]">Beranda</a>
+        <a href="/#about" class="hover:text-[#4A5568]">Tentang Kami</a>
+        <a href="/#trainings" class="hover:text-[#4A5568]">Pelatihan</a>
+        <a href="/#faq" class="hover:text-[#4A5568]">FAQ</a>
+        <a href="/#tutor" class="hover:text-[#4A5568]">Kontak</a>
+        <!-- Daftar Button -->
+        <a 
+          href="#daftar" 
+          class="ml-4 px-4 py-2 bg-[#805AD5] text-white text-sm font-semibold rounded-full hover:bg-[#6B46C1] transition duration-300"
+        >
+          Daftar
+        </a>
+      </nav>
+    </div>
+  
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="absolute top-16 left-0 w-full bg-white shadow-lg hidden lg:hidden">
+      <nav class="flex flex-col space-y-4 py-4 px-6 text-sm font-medium text-[#1A202C]">
+        <a href="/#beranda" class="hover:text-[#4A5568]">Beranda</a>
+        <a href="/#about" class="hover:text-[#4A5568]">Tentang Kami</a>
+        <a href="/#trainings" class="hover:text-[#4A5568]">Pelatihan</a>
+        <a href="/#faq" class="hover:text-[#4A5568]">FAQ</a>
+        <a href="/#tutor" class="hover:text-[#4A5568]">Kontak</a>
+        <!-- Daftar Button in Mobile Menu -->
+        <a 
+          href="#daftar" 
+          class="block px-4 py-2 bg-[#805AD5] text-white text-sm font-semibold text-center rounded-full hover:bg-[#6B46C1] transition duration-300"
+        >
+          Daftar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+<section id="dynamic-content" class="bg-white px-8 py-16 pt-24">
+    <div class="max-w-6xl mx-auto">
+      <!-- Title -->
+      <div id="section-title" class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-[#1A202C]">Loading...</h2>
+        <p class="text-lg text-[#4A5568] mt-4">Please wait...</p>
+      </div>
+  
+      <!-- Table -->
+      <div id="table-container" class="overflow-x-auto hidden">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead class="bg-[#1E293B] text-white">
+            <tr>
+              <th class="px-6 py-3 text-left font-bold text-sm">Materi</th>
+              <th class="px-6 py-3 text-left font-bold text-sm">Sub Materi</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    <!-- Goals -->
+    <div id="goals-container" class="hidden mt-8">
+        <div class="flex items-start gap-4 mb-6">
+        <div class="text-[#805AD5] text-2xl"><i class="fas fa-bullseye"></i></div>
+        <div>
+            <h3 class="text-lg font-bold text-[#1A202C]">Tujuan</h3>
+            <ul id="goals-list" class="list-disc pl-5 space-y-2 text-sm text-[#4A5568]"></ul>
+        </div>
+        </div>
+    </div>
+  
+      <!-- Additional Info -->
+      <div id="info-container" class="hidden mt-8">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="text-[#805AD5] text-2xl"><i class="fas fa-clock"></i></div>
+          <div>
+            <h3 class="text-lg font-bold text-[#1A202C]">Durasi</h3>
+            <p id="durasi" class="text-sm text-[#4A5568]"></p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 mb-6">
+          <div class="text-[#805AD5] text-2xl"><i class="fas fa-money-bill-wave"></i></div>
+          <div>
+            <h3 class="text-lg font-bold text-[#1A202C]">Biaya</h3>
+            <p id="biaya" class="text-sm text-[#4A5568]"></p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 mb-6">
+          <div class="text-[#805AD5] text-2xl"><i class="fas fa-calendar-alt"></i></div>
+          <div>
+            <h3 class="text-lg font-bold text-[#1A202C]">Waktu Pelaksanaan</h3>
+            <div id="waktu-pelaksanaan" class="mt-2 flex flex-wrap gap-4"></div>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="text-[#805AD5] text-2xl"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h3 class="text-lg font-bold text-[#1A202C]">Tempat Pelaksanaan</h3>
+            <p id="tempat" class="text-sm text-[#4A5568]"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+      <!-- Footer -->
+      <footer class="bg-black text-white py-4">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6">
+          <!-- Copyright -->
+          <div class="text-sm">
+            &copy; 2025 SRSSA
+          </div>
+      
+          <!-- Social Media Icons -->
+          <div class="flex space-x-4 mt-4 sm:mt-0">
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-dribbble text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-youtube text-white text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      
+      
+  </div>
+  <script>
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.remove("bg-transparent");
+        navbar.classList.add("bg-white/30", "backdrop-blur-sm");
+      } else {
+        navbar.classList.remove("bg-white/30", "backdrop-blur-sm");
+        navbar.classList.add("bg-transparent");
+      }
+    });
+  </script>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+  <script>
+    // Smooth scrolling for menu links
+    const menuLinks = document.querySelectorAll('nav a[href^="#"]');
+  
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        // Scroll to the target element with smooth behavior
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+  
+        // Close mobile menu after clicking (optional for smaller screens)
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (!mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+
+  <script>
+     // Mendapatkan ID dari URL
+     const urlParams = new URLSearchParams(window.location.search);
+     const trainingId = urlParams.get('id');
+    // Fungsi untuk menampilkan data berdasarkan ID
+    function loadContentById(trainingId) {
+        fetch('assets/data/tranings.json') // Ganti dengan URL atau path JSON Anda
+          .then((response) => response.json())
+          .then((data) => {
+            const trainings = data.trainings;
+      
+            // Cari pelatihan berdasarkan ID
+            const training = trainings.find((item) => item.id === trainingId);
+      
+            if (training) {
+              // Update Title dan Description
+              document.getElementById('section-title').innerHTML = `
+                <h2 class="text-3xl font-bold text-[#1A202C]">${training.title}</h2>
+                <p class="text-lg text-[#4A5568] mt-4">${training.description}</p>
+              `;
+      
+              // Tampilkan Goals
+              const goalsList = document.getElementById('goals-list');
+              goalsList.innerHTML = '';
+              training.goals.forEach((goal) => {
+                goalsList.innerHTML += `<li>${goal}</li>`;
+              });
+              document.getElementById('goals-container').classList.remove('hidden');
+      
+              // Tampilkan Tabel Materi
+              const tableBody = document.getElementById('table-body');
+              tableBody.innerHTML = '';
+              Object.entries(training.materials).forEach(([key, submaterials]) => {
+                const row = `
+                  <tr class="border-b border-gray-300">
+                    <td class="px-6 py-4 text-sm text-[#1A202C] font-medium">${key}</td>
+                    <td class="px-6 py-4 text-sm text-[#4A5568]">
+                      <ul class="list-disc pl-5 space-y-2">
+                        ${submaterials.map((sub) => `<li>${sub}</li>`).join('')}
+                      </ul>
+                    </td>
+                  </tr>
+                `;
+                tableBody.innerHTML += row;
+              });
+              document.getElementById('table-container').classList.remove('hidden');
+      
+              // Tampilkan Informasi Tambahan
+              document.getElementById('durasi').textContent = training.duration;
+              document.getElementById('biaya').textContent = training.fee;
+      
+              const waktuContainer = document.getElementById('waktu-pelaksanaan');
+              waktuContainer.innerHTML = '';
+              training.schedule.forEach((date) => {
+                waktuContainer.innerHTML += `
+                  <span class="px-4 py-2 bg-[#B2F5EA] text-[#1A202C] font-medium rounded-full shadow-sm cursor-default">
+                    ${date}
+                  </span>
+                `;
+              });
+      
+              document.getElementById('tempat').textContent = training.location;
+              document.getElementById('info-container').classList.remove('hidden');
+            } else {
+              document.getElementById('section-title').innerHTML = `
+                <h2 class="text-3xl font-bold text-red-500">Data Tidak Ditemukan</h2>
+                <p class="text-lg text-[#4A5568] mt-4">Pelatihan dengan ID ${trainingId} tidak tersedia.</p>
+              `;
+            }
+          })
+          .catch((error) => {
+            console.error('Error fetching JSON:', error);
+            document.getElementById('section-title').innerHTML = `
+              <h2 class="text-3xl font-bold text-red-500">Error</h2>
+              <p class="text-lg text-[#4A5568] mt-4">Gagal memuat data. Silakan coba lagi nanti.</p>
+            `;
+          });
+      }
+      
+    // Panggil fungsi dengan ID tertentu (contoh: ID 1)
+    document.addEventListener('DOMContentLoaded', () => {
+      loadContentById(trainingId); // Ganti angka ini untuk mencoba ID lain
+    });
+  </script>
+  
+      
+      
+
+  
+</body>
+
+</html>

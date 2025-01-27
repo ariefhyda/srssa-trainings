@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRSSA Training 2025</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F8F9FC] font-['Inter']">
+  <div class="max-w-[1440px] mx-auto">
+   <!-- Navbar -->
+   <header id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-white/30 transition-all duration-300">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="assets/icons/logo.png" alt="SRSSA Logo" class="h-10">
+        <span class="text-xl font-bold ml-3 text-[#1A202C]">SRSSA</span>
+      </div>
+  
+      <!-- Hamburger Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-[#1A202C] text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Navigation Menu -->
+      <nav id="menu" class="hidden lg:flex items-center space-x-6 text-sm font-medium text-[#1A202C]">
+        <a href="#beranda" class="hover:text-[#4A5568]">Beranda</a>
+        <a href="#about" class="hover:text-[#4A5568]">Tentang Kami</a>
+        <a href="#trainings" class="hover:text-[#4A5568]">Pelatihan</a>
+        <a href="#faq" class="hover:text-[#4A5568]">FAQ</a>
+        <a href="#tutor" class="hover:text-[#4A5568]">Kontak</a>
+        <!-- Daftar Button -->
+        <a 
+          href="#daftar" 
+          class="ml-4 px-4 py-2 bg-[#805AD5] text-white text-sm font-semibold rounded-full hover:bg-[#6B46C1] transition duration-300"
+        >
+          Daftar
+        </a>
+      </nav>
+    </div>
+  
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="absolute top-16 left-0 w-full bg-white shadow-lg hidden lg:hidden">
+      <nav class="flex flex-col space-y-4 py-4 px-6 text-sm font-medium text-[#1A202C]">
+        <a href="#beranda" class="hover:text-[#4A5568]">Beranda</a>
+        <a href="#about" class="hover:text-[#4A5568]">Tentang Kami</a>
+        <a href="#trainings" class="hover:text-[#4A5568]">Pelatihan</a>
+        <a href="#faq" class="hover:text-[#4A5568]">FAQ</a>
+        <a href="#tutor" class="hover:text-[#4A5568]">Kontak</a>
+        <!-- Daftar Button in Mobile Menu -->
+        <a 
+          href="#daftar" 
+          class="block px-4 py-2 bg-[#805AD5] text-white text-sm font-semibold text-center rounded-full hover:bg-[#6B46C1] transition duration-300"
+        >
+          Daftar
+        </a>
+      </nav>
+    </div>
+  </header>
+  
+
+
+
+<!-- Hero Section -->
+<section id="beranda" class="relative bg-gradient-to-br from-[#E9F8FF] to-[#F8F9FC] px-8 pt-24 pb-12 overflow-hidden h-screen">
+    <!-- Dekorasi Latar Belakang -->
+    <div class="absolute top-0 left-0 w-[300px] h-[300px] bg-[#FFD700] rounded-full opacity-20 blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D6BCFA] rounded-full opacity-20 blur-3xl translate-x-1/2 translate-y-1/2"></div>
+    <div class="absolute top-1/3 left-1/4 w-[200px] h-[200px] bg-gradient-to-br from-[#63B3ED] to-[#805AD5] rounded-full opacity-30 blur-2xl"></div>
+    
+    <!-- Konten Hero -->
+    <div class="max-w-6xl mx-auto relative flex flex-col-reverse lg:flex-row items-center h-full">
+        <!-- Left Text Section -->
+        <div class="lg:w-1/2 text-center lg:text-left flex flex-col justify-center px-4 lg:px-0 mt-8 lg:mt-0">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-[#1A202C] leading-tight">
+                Tingkatkan Kemampuan <br> Bersama <span class="text-[#805AD5]">SRSSA</span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-[#4A5568]">
+                Pelajari teknologi masa depan seperti <span class="font-semibold text-[#805AD5]">Image Processing</span>, 
+                <span class="font-semibold text-[#805AD5]">Computer Vision</span>, 
+                <span class="font-semibold text-[#805AD5]">Robotika</span>, dan 
+                <span class="font-semibold text-[#805AD5]">AI</span>.
+            </p>
+            <button class="mt-8 bg-[#805AD5] text-white py-3 px-6 sm:py-4 sm:px-8 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:bg-[#6B46C1] transition duration-300">
+                Daftar Sekarang!
+            </button>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="lg:w-1/2 flex justify-center items-center">
+            <!-- Foto -->
+            <div class="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px]">
+                <img 
+                    src="assets/photos/bima-b.png" 
+                    alt="Profile Photo" 
+                    class="relative z-10 rounded-full w-full h-full object-cover shadow-lg">
+                
+                <!-- Dekorasi Lingkaran -->
+                <div class="absolute -top-4 -left-4 w-full h-full border-4 border-[#FFD700] rounded-full"></div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-8 border-[#D6BCFA] rounded-full"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+    <!-- Social Robotics Section -->
+    <section id="about" class="bg-white px-8 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#1A202C]">
+                Social Robotics and Smart System Applications
+                </h2>
+                <p class="mt-2 text-lg text-[#4A5568]">
+                SRSSA adalah kelompok penelitian yang berfokus pada 4 area.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Cards -->
+                <!-- Card 1 -->
+                <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-[#805AD5] to-[#63B3ED] rounded-lg">
+                    <i class="fas fa-image text-white text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold text-[#1A202C]">Image Processing</h3>
+                <p class="mt-2 text-sm text-[#4A5568]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-[#63B3ED] to-[#805AD5] rounded-lg">
+                    <i class="fas fa-tv text-white text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold text-[#1A202C]">Computer Vision</h3>
+                <p class="mt-2 text-sm text-[#4A5568]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-[#9F7AEA] to-[#D6BCFA] rounded-lg">
+                    <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold text-[#1A202C]">Artificial Intelligence</h3>
+                <p class="mt-2 text-sm text-[#4A5568]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                </p>
+                </div>
+                <!-- Card 4 -->
+                <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-[#63B3ED] to-[#9F7AEA] rounded-lg">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold text-[#1A202C]">Robotics</h3>
+                <p class="mt-2 text-sm text-[#4A5568]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <div class="bg-[#E6FAFA] px-8 py-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-[#319795] text-4xl font-bold">&ldquo;</p>
+        <p class="text-[#1A202C] text-lg font-medium mt-4">
+          Era revolusi industri 4.0 ditandai oleh dominasi otomatisasi dan AI, yang mengubah lanskap
+          dunia kerja. Meski banyak pekerjaan konvensional tergantikan, peluang besar terbuka bagi mereka
+          yang menguasai Image Processing, Computer Vision, Robotika, dan AI.
+        </p>
+        <p class="text-[#4A5568] font-medium mt-6">
+          <b>Bima Sena Bayu Dewantara</b> <span class="italic">Trainer, Researcher</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Pelatihan -->
+    <section id="trainings" class="bg-white px-8 py-16">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#1A202C]">Katalog Pelatihan</h2>
+                <p class="mt-2 text-lg text-[#4A5568]">
+                  SRSSA menawarkan berbagai pelatihan di tahun 2025
+                </p>
+                <a 
+                  href="assets/documents/katalog-training-2025.pdf" 
+                  download 
+                  class="mt-2 inline-block bg-[#805AD5] text-white py-2 px-4 rounded-full text-sm font-medium hover:bg-[#6B46C1] transition duration-300"
+                >
+                  Unduh Katalog
+                </a>
+              </div>
+              
+              
+        
+            <!-- Training Catalog Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Image Processing</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Proses ini melibatkan teknik manipulasi gambar menggunakan algoritma matematika dan komputer.
+                </p>
+                <a href="detail.html?id=image-processing" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Computer Vision Basic</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Pelatihan dasar yang membantu memahami prinsip-prinsip inti dan alat yang digunakan untuk menerapkan teknologi ini.
+                </p>
+                <a href="detail.html?id=computer-vision-basic" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Computer Vision Advanced</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Pelatihan ini berfokus pada analisis data visual kompleks, seperti deteksi, segmentasi, dan pengenalan pola dengan teknik deep learning.
+                </p>
+                <a href="detail.html?id=computer-vision-advanced" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Robotic Basic</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Peserta belajar desain, kontrol, dan pengembangan robot dengan simulator realistis serta pemrograman ROS untuk multitasking real-time.
+                </p>
+                <a href="detail.html?id=robotic-basic" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 5 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Robotic Advanced</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Pelatihan ini untuk peserta dengan pemahaman dasar hingga menengah di robotika yang ingin mengembangkan keterampilan mereka dalam aplikasi industri, riset, dan proyek inovatif.
+                </p>
+                <a href="detail.html?id=robotic-advanced" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 6 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Artificial Intelligence Basic</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Peserta akan mempelajari dasar AI, teknik utama, dan aplikasinya, cocok untuk pelajar, profesional, atau pemula di bidang teknologi.
+                </p>
+                <a href="detail.html?id=ai-basic" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+        
+            <!-- Card 7 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Artificial Intelligence Advanced</h3>
+                <p class="text-sm text-[#4A5568] mb-6">
+                Pelatihan ini untuk peserta yang memahami dasar AI dan ingin mendalami teknik lanjutan seperti deep learning dan reinforcement learning untuk membangun model kompleks.
+                </p>
+                <a href="detail.html?id=ai-advanced" class="text-[#805AD5] font-semibold text-sm hover:underline">
+                Detail &rarr;
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Kenapa haru ikut -->
+      <section id="why" class="bg-white text-white px-8 py-16">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 rounded-xl bg-[#1E293B] p-8 shadow-lg">
+          <!-- Image Section -->
+          <div class="w-full lg:w-1/2">
+            <img 
+              src="assets/photos/kegiatan.png" 
+              alt="Training Discussion" 
+              class="rounded-lg shadow-md">
+          </div>
+      
+          <!-- Text Section -->
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">
+              Kenapa harus ikut pelatihan ini?
+            </h2>
+            <ol class="list-decimal pl-6 space-y-4 text-[#E2E8F0]">
+              <li>
+                <span class="font-semibold">Penguasaan Teknologi Terkini</span><br>
+                Tingkatkan keterampilan di bidang Image Processing, Computer Vision, Robotika, dan AI yang relevan dengan kebutuhan industri 4.0.
+              </li>
+              <li>
+                <span class="font-semibold">Dibimbing Para Ahli</span><br>
+                Belajar langsung dari instruktur berpengalaman lebih dari 15 tahun di bidangnya.
+              </li>
+              <li>
+                <span class="font-semibold">Sertifikasi Kompetensi</span><br>
+                Dapatkan sertifikat resmi yang meningkatkan kredibilitas profesional Anda.
+              </li>
+              <li>
+                <span class="font-semibold">Peluang Karier & Riset</span><br>
+                Siapkan diri Anda untuk bersaing di industri, mengembangkan proyek inovatif, atau melanjutkan riset di bidang teknologi.
+              </li>
+              <li>
+                <span class="font-semibold">Studi Kasus & Aplikasi Nyata</span><br>
+                Materi pelatihan berbasis studi kasus dengan solusi langsung pada dunia nyata.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="bg-white px-8 py-16">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Title -->
+          <h2 class="text-3xl font-bold text-[#1A202C] text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+      
+          <!-- FAQ Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- FAQ Item 1 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(1)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Bagaimana proses pembelajarannya?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-1"></i>
+              </div>
+              <div id="answer-1" class="mt-4 text-sm text-[#4A5568] hidden">
+                Pembelajaran dilakukan secara online melalui platform video conference, disertai dengan modul pembelajaran.
+              </div>
+            </div>
+      
+            <!-- FAQ Item 2 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(2)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Apakah kelas dilakukan secara online?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-2"></i>
+              </div>
+              <div id="answer-2" class="mt-4 text-sm text-[#4A5568] hidden">
+                Ya, semua kelas dilakukan secara online untuk memudahkan akses dari berbagai lokasi.
+              </div>
+            </div>
+      
+            <!-- FAQ Item 3 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(3)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Apakah ada batasan waktu untuk mendaftar program ini?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-3"></i>
+              </div>
+              <div id="answer-3" class="mt-4 text-sm text-[#4A5568] hidden">
+                Pendaftaran dibuka hingga seminggu sebelum pelatihan dimulai.
+              </div>
+            </div>
+      
+            <!-- FAQ Item 4 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(4)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Bagaimana jika pada hari pembelajaran saya tidak dapat mengikutinya?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-4"></i>
+              </div>
+              <div id="answer-4" class="mt-4 text-sm text-[#4A5568] hidden">
+                Anda dapat mengakses rekaman kelas melalui portal peserta.
+              </div>
+            </div>
+      
+            <!-- FAQ Item 5 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(5)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Apakah ada sesi mentoring setelah kelas?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-5"></i>
+              </div>
+              <div id="answer-5" class="mt-4 text-sm text-[#4A5568] hidden">
+                Ya, tersedia sesi mentoring eksklusif untuk membantu peserta memahami materi lebih lanjut.
+              </div>
+            </div>
+      
+            <!-- FAQ Item 6 -->
+            <div class="bg-[#F1F5F9] p-4 rounded-lg shadow-sm">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleCollapse(6)">
+                <span class="text-[#1A202C] font-medium text-sm">
+                  Dimana saya dapat mendaftar pelatihan ini?
+                </span>
+                <i class="fas fa-chevron-down text-[#805AD5]" id="icon-6"></i>
+              </div>
+              <div id="answer-6" class="mt-4 text-sm text-[#4A5568] hidden">
+                Anda dapat mendaftar melalui website resmi SRSSA atau menghubungi kontak kami.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Pengajar /Tutor -->
+      <section id="tutor" class="bg-white px-8 py-16">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-3xl font-bold text-[#1A202C] mb-12 text-center">
+            Pengajar / Tutor
+          </h2>
+          
+          <!-- Content Section -->
+          <div class="flex flex-col lg:flex-row items-start gap-12">
+            <!-- Left Text Section -->
+            <div class="lg:w-1/2">
+              <h3 class="text-2xl font-bold text-[#1A202C] mb-4">
+                Dr. Eng. Bima Sena Bayu Dewantara, S.ST, MT
+              </h3>
+              <p class="text-[#4A5568] leading-relaxed mb-6">
+                Beliau adalah seorang staf pengajar atau dosen di 
+                <span class="text-[#4C51BF] font-semibold">Politeknik Elektronika Negeri Surabaya</span> 
+                pada program studi 
+                <span class="text-[#4C51BF] font-semibold">S2 Teknik Informatika dan Komputer</span>. 
+                Dengan pengalaman di bidang 
+                <span class="text-[#F6AD55]">sinyal processing</span>, 
+                <span class="text-[#F6AD55]">image processing</span>, 
+                <span class="text-[#F6AD55]">computer vision</span>, 
+                <span class="text-[#F6AD55]">robotika</span>, 
+                <span class="text-[#F6AD55]">AI</span>, dan 
+                <span class="text-[#F6AD55]">human machine/robot interaction</span> 
+                selama lebih dari 15 tahun, telah banyak produk berupa sistem dan prototipe di bidang terkait yang dihasilkan. 
+                Di bidang sinyal processing, image processing, computer vision, dan AI, sebanyak lebih dari 20 jurnal dan 
+                puluhan paper conference telah dihasilkan. Sedangkan di bidang robotika, human machine/robot interface, dan AI, 
+                sebanyak lebih dari 16 jurnal dan puluhan paper conference juga telah dihasilkan.
+              </p>
+              <a href="https://bima.lecturer.pens.ac.id/" class="text-[#805AD5] font-bold text-sm hover:underline">
+                Detail Tutor &rarr;
+              </a>
+            </div>
+            
+            <!-- Right Image Section -->
+            <div class="lg:w-1/2 flex justify-center">
+              <div class="bg-[#F3E8FF] p-4 rounded-lg">
+                <img width="400px"
+                  src="assets/photos/bima-b.png" 
+                  alt="Tutor Image" 
+                  class="rounded-lg shadow-md">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-black text-white py-4">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6">
+          <!-- Copyright -->
+          <div class="text-sm">
+            &copy; 2025 SRSSA
+          </div>
+      
+          <!-- Social Media Icons -->
+          <div class="flex space-x-4 mt-4 sm:mt-0">
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-dribbble text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+            <a href="#" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition">
+              <i class="fab fa-youtube text-white text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      
+      
+  </div>
+  <script>
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.remove("bg-transparent");
+        navbar.classList.add("bg-white/30", "backdrop-blur-sm");
+      } else {
+        navbar.classList.remove("bg-white/30", "backdrop-blur-sm");
+        navbar.classList.add("bg-transparent");
+      }
+    });
+  </script>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+  <script>
+    // Smooth scrolling for menu links
+    const menuLinks = document.querySelectorAll('nav a[href^="#"]');
+  
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        // Scroll to the target element with smooth behavior
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+  
+        // Close mobile menu after clicking (optional for smaller screens)
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (!mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    function toggleCollapse(id) {
+      const answer = document.getElementById(`answer-${id}`);
+      const icon = document.getElementById(`icon-${id}`);
+  
+      // Toggle hidden class
+      answer.classList.toggle("hidden");
+  
+      // Rotate the chevron icon
+      if (answer.classList.contains("hidden")) {
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+      } else {
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+      }
+    }
+  </script>
+  
+      
+      
+
+  
+</body>
+
+</html>
